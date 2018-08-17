@@ -44,7 +44,7 @@ Laravel 框架对系统有一些要求。所有这些要求 Laravel Homestead �
 <VirtualHost *:80>
     #跨域支持
     DocumentRoot "/Users/ericzhou/webServer/yingli-api/public"
-    ServerName   yl.qmmian.cn
+    ServerName   xxx.xxxxx.xxx
     <Directory "/Users/ericzhou/webServer/yingli-api/public"> 
         Require all granted   
         Header set Access-Control-Allow-Origin "*"
