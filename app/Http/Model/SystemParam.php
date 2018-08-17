@@ -57,10 +57,12 @@ class SystemParam extends Base
             return $arr;
         });
         return $param_key ? $rs[$param_key] : $rs;*/
-        if ($param_key) return self::where('agent_id', $agent_id)->where('param_key', $param_key)->first()->param_value;
-        return $list = self::where('agent_id', $agent_id)->get()->mapWithKeys(function ($item) {
-            return [$item['param_key'] => $item['param_value']];
+        $paramList = \Cache::remember('getParamValue' . $agent_id, 3, function () use ($agent_id) {
+            return self::where('agent_id', $agent_id)->get()->mapWithKeys(function ($item) {
+                return [$item['param_key'] => $item['param_value']];
+            });
         });
+        return $param_key?$paramList[$param_key]:$paramList;
     }
 
     /**
@@ -70,8 +72,8 @@ class SystemParam extends Base
     {
         $referer = parse_url(request()->header("referer"));
         $host = $referer['scheme'] . '://' . $referer['host'];
-        return \Cache::remember('getAgentIdByHost' . $host, null, function () use ($host) {
-            $rs = self::where('param_key', 'admin_domain')->where('param_value', 'like', $host.'%')->first();
+        return \Cache::remember('getAgentIdByHost' . $host, 3, function () use ($host) {
+            $rs = self::where('param_key', 'admin_domain')->where('param_value', 'like', $host . '%')->first();
             return $rs ? $rs->agent_id : 1;
         });
     }
