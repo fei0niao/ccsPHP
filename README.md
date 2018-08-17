@@ -2,7 +2,6 @@
 - [Laravel 5.5中文文档](https://d.laravel-china.org/docs/5.5/routing)
 - [vuejs2中文文档](https://cn.vuejs.org/v2/guide/installation.html)
 - [vue-router中文文档](https://router.vuejs.org/zh-cn/)
-- [vuejs管理后台模板地址](https://github.com/lin-xin/vue-manage-system)
 - [laravel注释跳转生成包](https://github.com/barryvdh/laravel-ide-helper)
 
 ## 提交代码注意事项
@@ -13,7 +12,7 @@
 - 全部api都使用post,URI地址使用驼峰
 - 参数名称,函数名称,变量,类名称,使用驼峰,尽量使用表达意思的单词组合
 
-## 映利PHP-API项目(使用Laravel5.5框架,vuejs2前端框架)
+## 使用Laravel5.5框架,vuejs2前端框架
 Laravel 框架对系统有一些要求。所有这些要求 Laravel Homestead 虚拟机都能满足，因此强烈建议你使用 Homestead 作为你本地的 Laravel 开发环境。
 - PHP >= 7.0.0
 - PHP OpenSSL 扩展
@@ -26,11 +25,11 @@ Laravel 框架对系统有一些要求。所有这些要求 Laravel Homestead �
 
 ## 环境
 
-- mysql 版本5.7 数据库地址:10.10.1.101:3306 用户名:yingli 密码:yingli
-- redis 版本5.7 数据库地址:10.10.1.101/127.0.0.1 端口:6379 用户名:空 密码:空
+- mysql 版本5.7
+- redis 版本5.7
 - nginx-php-fpm框架
 - composer PHP依赖管理工具
-- 前端页面使用vue-cli工具生成前端页面vusj + vue-router + webpack ...
+- 前端页面使用vue-cli工具生成前端页面vuejs + vue-router + webpack ...
 
 ## 本地开发环境
 
