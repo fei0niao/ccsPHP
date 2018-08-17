@@ -1,0 +1,111 @@
+{
+  "id": "040621e3-da55-7928-8dc0-9e11a0be2c1d",
+  "name": "passport请求",
+  "description": "",
+  "order": [
+    "c5adbd5b-0e52-cdea-1377-877df84e3325",
+    "d8568d8a-fb12-42be-2e01-82041e89d1fd"
+  ],
+  "folders": [],
+  "timestamp": 1506307247563,
+  "owner": "",
+  "public": false,
+  "requests": [
+    {
+      "id": "c5adbd5b-0e52-cdea-1377-877df84e3325",
+      "headers": "",
+      "url": "10.10.1.233:802/api/v1/user/login",
+      "pathVariables": {},
+      "preRequestScript": null,
+      "method": "POST",
+      "collectionId": "040621e3-da55-7928-8dc0-9e11a0be2c1d",
+      "data": [
+        {
+          "key": "grant_type",
+          "value": "password",
+          "type": "text",
+          "enabled": true
+        },
+        {
+          "key": "client_secret",
+          "value": "D8DXVXSZLuk140qRYbZ3MfzX39h1gruoBqOTknAy",
+          "type": "text",
+          "enabled": true
+        },
+        {
+          "key": "client_id",
+          "value": "10",
+          "type": "text",
+          "enabled": true
+        },
+        {
+          "key": "email",
+          "value": "smoothsea@yeah.net",
+          "type": "text",
+          "enabled": true
+        },
+        {
+          "key": "password",
+          "value": "123456",
+          "type": "text",
+          "enabled": true
+        }
+      ],
+      "dataMode": "params",
+      "name": "请求token",
+      "description": "",
+      "descriptionFormat": "html",
+      "time": 1506307247563,
+      "version": 2,
+      "responses": [],
+      "tests": null,
+      "currentHelper": "normal",
+      "helperAttributes": {}
+    },
+    {
+      "id": "d8568d8a-fb12-42be-2e01-82041e89d1fd",
+      "headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA1N2FhNmMzODZlYzA3MTMzYmU0MzA1NGY0ZjMzNGYxNmRmZWYwZTQ0MTA4NzgxNzgzMTEzNjQzN2MxNGMzZGZjZTNiZDcwOWZmMmE3Zjg5In0.eyJhdWQiOiIxMCIsImp0aSI6IjA1N2FhNmMzODZlYzA3MTMzYmU0MzA1NGY0ZjMzNGYxNmRmZWYwZTQ0MTA4NzgxNzgzMTEzNjQzN2MxNGMzZGZjZTNiZDcwOWZmMmE3Zjg5IiwiaWF0IjoxNTA2MDY1MDU4LCJuYmYiOjE1MDYwNjUwNTgsImV4cCI6MTUzNzYwMTA1OCwic3ViIjoiMiIsInNjb3BlcyI6W119.hl6TRmx--i6nSau6ZiPyypWDdhSS5OxBdZLhMDtvAgaa-oo-sZQ5zO3c9PUYgnECe0_tbhbVLOcwZL9O8XYhkYDIH0tfvZfTedLB5FsOxkXJ8VRmExN3aXCdneY5hQ5xJbDtq0nh5PROUjLgyZFRKPa_jAbMj3mVcO6wYIDQoK7iWzcMagflniJufFi-MEHa4S9RbLkt7mFC9wG86VXRR39oqNaPq8e7xlBFOvTsvP9w9NMyPYMOD4JajFAvbZBUE7SoesC-YIhU3Jzgx4rbLNoHBUt8RqZsO7sGL2MmIqZHMCZaMg8338TEmA-bgDAby01ZL_yG-8adIkNIDnn-LDiYHq4zP8C6yAM0h2GGosyxH4vHB4m4BAJX6e7ZLQFHABlEwoys8fGiwBGLxZoM_KHD4yzhK5XJFJq494blekouMW65ECvoj3ObNKDHuPB-r13qUJwrEZyI4CZZthU1crO3AaK797igtcIHsFYp6fkD_AK3rNX21xeTBIq2CqAY_765NMllj8kYADqluByQIU0RF2JH1OnxbjI4TNImaJhMZh_Yh4JUswOJyCEMhJbGO25kXGJly0CW7vNU3UXCtFbLD_hJgQgqoxC5X9pidAXoxLjBdL78uplllrZSZyusF1EkML9ZOxD53ebbngSDl5RHBqDGMmdolMtXKicjayY\n",
+      "url": "10.10.1.233:802/api/foo",
+      "pathVariables": {},
+      "preRequestScript": null,
+      "method": "POST",
+      "collectionId": "040621e3-da55-7928-8dc0-9e11a0be2c1d",
+      "data": [
+        {
+          "key": "token_type",
+          "value": "Bearer",
+          "type": "text",
+          "enabled": true
+        },
+        {
+          "key": "expires_in",
+          "value": "31536000",
+          "type": "text",
+          "enabled": true
+        },
+        {
+          "key": "access_token",
+          "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA1N2FhNmMzODZlYzA3MTMzYmU0MzA1NGY0ZjMzNGYxNmRmZWYwZTQ0MTA4NzgxNzgzMTEzNjQzN2MxNGMzZGZjZTNiZDcwOWZmMmE3Zjg5In0.eyJhdWQiOiIxMCIsImp0aSI6IjA1N2FhNmMzODZlYzA3MTMzYmU0MzA1NGY0ZjMzNGYxNmRmZWYwZTQ0MTA4NzgxNzgzMTEzNjQzN2MxNGMzZGZjZTNiZDcwOWZmMmE3Zjg5IiwiaWF0IjoxNTA2MDY1MDU4LCJuYmYiOjE1MDYwNjUwNTgsImV4cCI6MTUzNzYwMTA1OCwic3ViIjoiMiIsInNjb3BlcyI6W119.hl6TRmx--i6nSau6ZiPyypWDdhSS5OxBdZLhMDtvAgaa-oo-sZQ5zO3c9PUYgnECe0_tbhbVLOcwZL9O8XYhkYDIH0tfvZfTedLB5FsOxkXJ8VRmExN3aXCdneY5hQ5xJbDtq0nh5PROUjLgyZFRKPa_jAbMj3mVcO6wYIDQoK7iWzcMagflniJufFi-MEHa4S9RbLkt7mFC9wG86VXRR39oqNaPq8e7xlBFOvTsvP9w9NMyPYMOD4JajFAvbZBUE7SoesC-YIhU3Jzgx4rbLNoHBUt8RqZsO7sGL2MmIqZHMCZaMg8338TEmA-bgDAby01ZL_yG-8adIkNIDnn-LDiYHq4zP8C6yAM0h2GGosyxH4vHB4m4BAJX6e7ZLQFHABlEwoys8fGiwBGLxZoM_KHD4yzhK5XJFJq494blekouMW65ECvoj3ObNKDHuPB-r13qUJwrEZyI4CZZthU1crO3AaK797igtcIHsFYp6fkD_AK3rNX21xeTBIq2CqAY_765NMllj8kYADqluByQIU0RF2JH1OnxbjI4TNImaJhMZh_Yh4JUswOJyCEMhJbGO25kXGJly0CW7vNU3UXCtFbLD_hJgQgqoxC5X9pidAXoxLjBdL78uplllrZSZyusF1EkML9ZOxD53ebbngSDl5RHBqDGMmdolMtXKicjayY",
+          "type": "text",
+          "enabled": true
+        },
+        {
+          "key": "refresh_token",
+          "value": "def502004443c4c8cc463a894217253f05aefe19544b2a8c66ca488ad4f728701bb390f4ac5b2273e1bf53233abd493df01b24d50ee4c3f0e2ae557c9f51f61ed67a10ba4d8e7b8835556276aab1bc009568c4707df10c36d51eaa5c12dc3067459c8401aefe5da0d5c08859a63ee551d16f7aa9a2a0d08640a589d7812401d5201191c67dbfd772e073fd1273764e65f6967617a07cf9f9f131ddf1e28cc518fab14ca1586b85cf6d4bf1cda4513516ab0ef6aaa0a5d037c882f345a6fd3261844a44731733c785df84c10dc0ca2553cde71119f0210713c87c58570efcdfc1e53b10b1a5329d963db1832fc044c63f14779ffcc7bf9d30fc1c500f306490d597686053ff1a034047ae0ee4ffaa28430d8a1ee398c1c53b1f07a71bcf3c4688dff74ee9990b0f00bf9a710e920b42abd468f562a4ce2f79d5f2b0372f07e9bd5e77ea4ad002f423a52baf76a4c70d2f0d953b5cad2b79a0ba05c1690df873f1e70e",
+          "type": "text",
+          "enabled": true
+        }
+      ],
+      "dataMode": "params",
+      "name": "客户端带token请求服务端",
+      "description": "",
+      "descriptionFormat": "html",
+      "time": 1506307297811,
+      "version": 2,
+      "responses": [],
+      "tests": null,
+      "currentHelper": "normal",
+      "helperAttributes": {}
+    }
+  ]
+}
